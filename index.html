@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="shortcut icon"
+      href="./image/Logo Web.jpg"
+      type="image/x-icon"
+    />
+  
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"></div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>
+        <span class="greeting">Hi, I'm</span>
+        Rendra Ghaisany Althaf <!-- ✏️ Ganti nama -->
+        <span class="role">Web Developer</span>
+      </h1>
+      <p class="hero-desc">A growing web developer focused on HTML, CSS, and Laravel. Passionate about learning and ready to contribute to real-world projects.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-num">5+</span><span class="stat-label">Projects Done</span></div>
+        <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Technologies</span></div>
+        <div class="stat-item"><span class="stat-num">∞</span><span class="stat-label">Eagerness to Learn</span></div>
+      </div>
+    </div>
+
+    <!-- FOTO: ✏️ Ganti URL src dengan link foto kamu -->
+    <!-- Contoh GitHub : https://github.com/usernamekamu.png -->
+    <!-- Contoh imgbb  : https://i.ibb.co/xxx/foto.jpg      -->
+    <div class="hero-photo">
+      <div class="photo-wrap">
+        <div class="photo-ring-2"></div>
+        <div class="photo-ring"></div>
+        <div class="photo-circle">
+          <img
+            src="./image/Profil.png"
+            onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex';"
+            alt="Profile Photo"
+            style="width:100%;height:100%;object-fit:cover;border-radius:50%;"
+          >
+          <div id="photoFallback" style="display:none;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;width:100%;height:100%;">
+            <div style="font-size:5rem;">🧑‍💻</div>
+            <div style="font-size:0.68rem;color:#64748b;text-align:center;">Replace photo URL<br>in index.html</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="section-header">
+        <span class="section-label">// about me</span>
+        <h2>Who Am I?</h2>
+      </div>
+      <!-- ✏️ Ganti teks deskripsi -->
+      <p>I'm a <strong>beginner Web Developer</strong> actively learning and building my portfolio. I have a solid foundation in HTML, CSS, and web development using the Laravel framework along with database management.</p>
+      <p>Although I'm still early in my journey, I'm always eager to work on real projects to sharpen my skills. I believe <strong>consistent daily learning</strong> is the key to becoming a great developer.</p>
+      <div class="about-chips">
+        <span class="chip">Eager to Learn</span>
+        <span class="chip">Open to Internship</span>
+        <span class="chip">Freelance OK</span>
+        <span class="chip">Indonesia 🇮🇩</span>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+        <div class="t-filename">profile.json</div>
+      </div>
+      <div class="terminal-body">
+        <!-- ✏️ Ganti data terminal -->
+        <div><span class="t-prompt">$ </span><span class="t-cmd">cat</span> profile.json</div>
+        <div style="margin-top:0.4rem;">{</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Rendra Ghaisany Althaf"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Web Developer"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"level"</span>: <span class="t-str">"Beginner 🌱"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Indonesia 🇮🇩"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"stack"</span>: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"Laravel"</span>, <span class="t-str">"MySQL"</span>],</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"goal"</span>: <span class="t-str">"keep learning & growing"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-str">"open to work ✅"</span></div>
+        <div>}</div>
+        <div style="margin-top:0.4rem;"><span class="t-prompt">$ </span><span class="t-cursor">█</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="section-header">
+      <span class="section-label">// skills</span>
+      <h2>Tech Stack</h2>
+      <p class="section-desc">Technologies I use on a daily basis.</p>
+    </div>
+    <div class="skills-grid">
+
+      <!-- ✏️ Ubah data-w (0.0–1.0) sesuai kemampuanmu -->
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">HTML & CSS</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.75" style="transform:scaleX(0.75);"></div></div>
+        </div>
+        <div class="skill-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Flexbox</span><span class="tag">Grid</span><span class="tag">Responsive</span></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-name">Laravel & PHP</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>50%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.5" style="transform:scaleX(0.5);"></div></div>
+        </div>
+        <div class="skill-tags"><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MVC</span><span class="tag">Blade</span><span class="tag">Eloquent</span><span class="tag">Route</span></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">Database</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>65%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.65" style="transform:scaleX(0.65);"></div></div>
+        </div>
+        <div class="skill-tags"><span class="tag">MySQL</span><span class="tag">SQL Query</span><span class="tag">Migration</span><span class="tag">Seeder</span><span class="tag">Table Relations</span></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <div class="skill-name">JavaScript Basics</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>45%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.45" style="transform:scaleX(0.45);"></div></div>
+        </div>
+        <div class="skill-tags"><span class="tag">JS Basics</span><span class="tag">DOM</span><span class="tag">Events</span><span class="tag">Fetch API</span></div>
+      </div>
+
+    
+
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-name">Tools & Others</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>60%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.6" style="transform:scaleX(0.6);"></div></div>
+        </div>
+        <div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">XAMPP</span><span class="tag">Postman</span><span class="tag">Figma</span></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">Web Concepts</div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>65%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.65" style="transform:scaleX(0.65);"></div></div>
+        </div>
+        <div class="skill-tags"><span class="tag">REST API</span><span class="tag">CRUD</span><span class="tag">Authentication</span><span class="tag">Form Validation</span><span class="tag">Session</span></div>
+      </div>
+
+      <div class="skill-card" style="border-style:dashed;opacity:0.75;">
+        <div class="skill-icon">🌱</div>
+        <div class="skill-name">Currently Learning</div>
+        <div style="font-size:0.82rem;color:var(--muted);margin-top:0.5rem;line-height:1.75;">Continuously improving by diving deeper into JavaScript and modern frontend frameworks.</div>
+        <div class="skill-tags" style="margin-top:0.8rem;">
+          <span class="tag" style="border-color:rgba(74,222,128,0.3);color:#4ade80;background:rgba(74,222,128,0.08);">🌱 JavaScript ES6+</span>
+          <span class="tag" style="border-color:rgba(74,222,128,0.3);color:#4ade80;background:rgba(74,222,128,0.08);">🌱 React.js</span>
+          <span class="tag" style="border-color:rgba(74,222,128,0.3);color:#4ade80;background:rgba(74,222,128,0.08);">🌱 Tailwind CSS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-inner">
+    <div class="section-header">
+      <span class="section-label">// projects</span>
+      <h2>Recent Projects</h2>
+      <p class="section-desc">Some projects I have worked on.</p>
+    </div>
+    <div class="projects-grid">
+ 
+      <!-- ✏️ PROJECT 1
+           - Ganti href pada .project-card-link dengan link GitHub atau demo
+           - Ganti b-url, emoji, nama, deskripsi, dan tag sesuai proyekmu
+           - Tombol GitHub (⌥) : isi href dengan link repo GitHub
+           - Tombol View  (↗) : isi href dengan link demo / live site        -->
+      <div class="project-card">
+        
+        <a href="https://github.com/Rendraghaisany/Jadwal-Sholat" target="_blank" class="project-card-link" title="Open Project"></a>
+        <div class="project-img">
+          <div class="browser-bar">
+            <div class="b-dot"></div><div class="b-dot"></div><div class="b-dot"></div>
+            <div class="b-url">Jadwal-Sholat</div>
+          </div>
+          <div class="project-overlay"></div>
+          <div class="project-emoji">🕌</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Web App</div>
+          <div class="project-name">Prayer Schedule Web App</div>
+          <p class="project-desc">A web application that provides accurate daily prayer times based on user location. Displays real-time schedules and includes city search and automatic location detection.</p>
+        </div>
+        <div class="project-footer">
+          <div class="project-tech"><span class="tag">MySQL</span><span class="tag">CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Rendraghaisany/Jadwal-Sholat" target="_blank" class="icon-btn" title="GitHub">⌥</a>
+            <a href="https://rendraghaisany.github.io/Jadwal-Sholat/ " target="_blank" class="icon-btn view-btn" title="View Project">View ↗</a>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ✏️ PROJECT 2 -->
+      <div class="project-card">
+        <a href="https://github.com/Rendraghaisany/Katalog-Produk" target="_blank" class="project-card-link" title="Open Project"></a>
+        <div class="project-img">
+          <div class="browser-bar">
+            <div class="b-dot"></div><div class="b-dot"></div><div class="b-dot"></div>
+            <div class="b-url">Product-Catalog</div>
+          </div>
+          <div class="project-overlay"></div>
+          <div class="project-emoji">🛒</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Web App</div>
+          <div class="project-name">Electronic Product Catalog</div>
+          <p class="project-desc">A web application that displays a catalog of electronic products with filtering and search capabilities. Built with modern frontend technologies for an intuitive user experience.</p>
+        </div>
+        <div class="project-footer">
+          <div class="project-tech"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Rendraghaisany/Katalog-Produk" target="_blank" class="icon-btn" title="GitHub">⌥</a>
+            <a href="https://rendraghaisany.github.io/Katalog-Produk/" target="_blank" class="icon-btn view-btn" title="View Project">View ↗</a>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ✏️ PROJECT 3 -->
+      <div class="project-card">
+        <a href="https://github.com/yourusername/repo-name" target="_blank" class="project-card-link" title="Open Project"></a>
+        <div class="project-img">
+          <div class="browser-bar">
+            <div class="b-dot"></div><div class="b-dot"></div><div class="b-dot"></div>
+            <div class="b-url">library-system.test</div>
+          </div>
+          <div class="project-overlay"></div>
+          <div class="project-emoji">📚</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Laravel · CRUD App</div>
+          <div class="project-name">Library Management System</div>
+          <p class="project-desc">A book borrowing management app with book data, member records, and borrowing history.</p>
+        </div>
+        <div class="project-footer">
+          <div class="project-tech"><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">HTML/CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/repo-name" target="_blank" class="icon-btn" title="GitHub">⌥</a>
+            <a href="#" target="_blank" class="icon-btn view-btn" title="View Project">View ↗</a>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ➕ TAMBAH PROYEK: copy salah satu blok project-card di atas, paste di sini -->
+ 
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="certs-inner">
+    <div class="section-header">
+      <span class="section-label">// certificates</span>
+      <h2>Certifications</h2>
+      <p class="section-desc">Click a certificate to view its details.</p>
+    </div>
+    <div class="certs-grid">
+
+      <!-- Sertifikat 1: Google Play Academy -->
+<div class="cert-card" onclick="openModal('Google Play Store Listing Certificate','Google Play Academy · Cert #162773245','October 7, 2025 — October 7, 2028','▶️')">
+  <div class="cert-thumb" style="background:#f8f8f8;padding:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+    <img src="./image/sertifikat.jpg" alt="Google Play Store Listing Certificate" style="width:100%;height:100%;object-fit:contain;border-radius:4px;">
+  </div>
+  <div class="cert-body">
+    <div class="cert-issuer">Google Play Academy</div>
+    <div class="cert-name">Google Play Store Listing Certificate</div>
+    <div class="cert-date">Oct 2025 · Valid until Oct 2028</div>
+    <div style="font-size:0.65rem;color:var(--muted);margin-top:0.2rem;font-family:'JetBrains Mono',monospace;"></div>
+  </div>
+</div>  
+      <!-- ➕ TAMBAH SERTIFIKAT: copy blok cert-card di atas, paste di sini -->
+
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-header">
+        <span class="section-label">// contact</span>
+        <h2>Let's Work Together</h2>
+      </div>
+      <p>Have an interesting project or want to collaborate? Feel free to reach out through any of the channels below.</p>
+      <div class="contact-links">
+        <!-- ✏️ Ganti dengan info kontak kamu -->
+        <a href="mailto:ghaisanyrendra@gmail.com" class="contact-link"><span class="c-icon">✉️</span><span class="c-text"><span class="c-label">Email</span><span class="c-val"><span class="__cf_email__" data-cfemail="94f3fcf5fde7f5faede6f1faf0e6f5d4f3f9f5fdf8baf7fbf9">ghaisanyrendra@gmail.com</span></span></span><span style="color:#64748b;">→</span></a>
+        
+        <a href="https://github.com/Rendraghaisany" target="_blank" class="contact-link"><span class="c-icon">🐙</span><span class="c-text"><span class="c-label">GitHub</span><span class="c-val">github.com/yourusername</span></span><span style="color:#64748b;">→</span></a>
+        <a href="https://wa.me/6287875359117" target="_blank" class="contact-link"><span class="c-icon">💬</span><span class="c-text"><span class="c-label">WhatsApp</span><span class="c-val">+62 812 3456 7890</span></span><span style="color:#64748b;">→</span></a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="form-group"><label>Full Name</label><input type="text" placeholder="RenD"></div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="Ren@example.com"></div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Tell me about your project..."></textarea></div>
+      <button class="btn btn-primary" style="align-self:flex-start;" onclick="handleSend(this)">Send Message ✉️</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">© 2025 <span>Rendra</span> — Built with ❤️ and ☕</div> <!-- ✏️ Ganti nama -->
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-cert-preview"><div id="modalSeal"></div><div id="modalImgTitle"></div></div>
+    <div class="modal-name" id="modalName"></div>
+    <div class="modal-meta" id="modalMeta"></d
